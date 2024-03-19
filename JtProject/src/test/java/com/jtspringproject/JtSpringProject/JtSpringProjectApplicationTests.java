@@ -7,7 +7,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 class JtSpringProjectApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void userControllerTest(){
+		assert(true);
+	}
+
+	@Test
+	public void cartServiceTest(){
+		assert(true);
 	}
 
 }
