@@ -35,8 +35,8 @@ UNIQUE (username)
 
 # insert default customers
 INSERT INTO CUSTOMER(address, email, password, role, username) VALUES
-                                                                   ('123, Albany Street', 'admin@nyan.cat', '123', 'ROLE_ADMIN', 'admin'),
-                                                                   ('765, 5th Avenue', 'lisa@gmail.com', '765', 'ROLE_NORMAL', 'lisa');
+                                                                   ('123, Albany Street', 'admin@nyan.cat', '123', 'ROLE_ADMIN', 'admonis'),
+                                                                   ('765, 5th Avenue', 'lisa@gmail.com', '765', 'ROLE_NORMAL', 'laura');
 
 # create the product table
 CREATE TABLE IF NOT EXISTS PRODUCT(
@@ -58,8 +58,8 @@ INSERT INTO PRODUCT(description, image, name, price, quantity, weight, category_
 
 
 # create indexes
-CREATE INDEX FK7u438kvwr308xcwr4wbx36uiw
+CREATE INDEX FK7u438kvwr308xcwr4wbx36uaw
     ON PRODUCT (category_id);
 
-CREATE INDEX FKt23apo8r9s2hse1dkt95ig0w5
+CREATE INDEX FKt23apo8r9s2hse1dkt95ig0a5
     ON PRODUCT (customer_id);
